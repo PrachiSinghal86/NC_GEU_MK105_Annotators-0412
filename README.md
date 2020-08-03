@@ -8,9 +8,25 @@
 * Recruiter Profile
 # Flow of the Project
 **Main.py** is the main file from the website will start. It is a Flask File which will be linked to each and every prediction model and HTML pages.
-
-## Task Pending
-- [] Back-end
+From the main file we can access each and every feature. First the user will have to make an account and the data will be stored in MySQL.
+- Profile
+  - After going in profile page the user will have to enter his personal,educational and skills.
+  - After that there is an option to predict the job title most suitable for him.
+  - Now he be directed to Job Prediction page
+- Job Title Prediction
+  - Depending on the work experience, education and skills the title most suitable for him will be predicted.
+  - He will also get suggestions of skills which he lack for the that job profile.
+  - Depending on his preferred location and title he will get expected salary.
+  - He can also directed to job website to  apply for jobs based on the job title predicted.
+- Analysis
+  - Graphs of various job title are displayed.
+  - Skills, Location, Salary are used to plot multiple graphs.
+- Future Forecast
+  - A synthetic data to predict future trend is made using the statistics from various websites.
+  - Time Series Analysis of the data is made to get expected number of jobs in a particular profile till 2025.
+- Salary Prediction
+  - Salary is predicted using Job Title and Location.
+  - SVM is used to predict the range.
 
 ## Task Done
 - [x] Scrapped Data
