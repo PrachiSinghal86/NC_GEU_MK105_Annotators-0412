@@ -13,7 +13,7 @@ From the main file we can access each and every feature. First the user will hav
   - After going in profile page the user will have to enter his personal,educational and skills.
   - After that there is an option to predict the job title most suitable for him.
   - Now he be directed to Job Prediction page
-  -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/blob/master/front-end/static/images/profile.jpeg "Profile")
+  -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/blob/master/Screen%20Shots%20of%20website/profile.jpeg"Profile")
 - Job Title Prediction
   - Depending on the work experience, education and skills the title most suitable for him will be predicted.
   - RNN and NLP is used to train the dataset which is extracted from Indeed and Glassdoor.
