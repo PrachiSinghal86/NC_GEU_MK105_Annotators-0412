@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Disha | Future_Predictions</title>
+    <style>
+    .c1 {
+        background: #abbaab;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    td { font-size:20px; }
+    img {
+        border : 2px solid black;
+        border-radius: 8%;
+        box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+
+    }
+    </style>
+</head>
+<body class="c1">
+<center><h1 class="mt-3 mb-4" style="font-family:Bookman; font-size:50px;" >{{ heading }}</h1></center>
+<div class="container-fluid mb-3"  style="width:100%; height:100%;">
+    <div class="row align-items-center">
+        <div class="col-md-2"></div>
+        <div class="col-md-5" style="width:50%; height:50%;"><img src="{{ g1 }}" class="img-fluid mt-4" alt="Machine Learning Engineer"></div>
+        <div class="col-md-4 d-flex justify-content-center" >
+            <p style="font-size:24px; text-align:center;margin-right:3px;margin-left:8px;margin-top:10px;" class="mt-4"><i>
+
+            Here, we present to you the time series analysis of a few of the job titles.<br>
+            The graph depicts the distribution of jobs from the past 15 years and then uses time series analysis to predict the job trends for future years.</i></p>
+        </div>
+    </div>
+</div>
+<!--
+<center><img src="{{ g1 }}" class="img-fluid mt-4" alt="Machine Learning Engineer"></center>--><br><br>
+
+<div class="container mt-4">
+<table class="table mt-4" style="text-align:center;">
+  <thead class="black white-text">
+    <tr>
+      <th scope="col"></th>
+      <th scope="col" style="font-size:22px;">YEAR</th>
+      <th scope="col" style="font-size:22px;">No. OF JOBS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><i class='fas fa-angle-double-right' style='font-size:24px'></i></th>
+      <td>2021</td>
+      <td>{{ arrcount[0] }}</td>
+    </tr>
+    <tr>
+      <th scope="row"><i class='fas fa-angle-double-right' style='font-size:24px'></i></th>
+      <td>2022</td>
+      <td>{{ arrcount[1] }}</td>
+    </tr>
+  <tr>
+      <th scope="row"><i class='fas fa-angle-double-right' style='font-size:24px'></i></th>
+      <td>2023</td>
+      <td>{{ arrcount[2] }}</td>
+    </tr>
+  <tr>
+      <th scope="row"><i class='fas fa-angle-double-right' style='font-size:24px'></i></th>
+      <td>2024</td>
+      <td>{{ arrcount[3] }}</td>
+    </tr>
+  <tr>
+      <th scope="row"><i class='fas fa-angle-double-right' style='font-size:24px'></i></th>
+      <td>2025</td>
+      <td>{{ arrcount[4] }}</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+</body>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>

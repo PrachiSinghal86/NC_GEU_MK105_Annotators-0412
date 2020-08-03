@@ -13,17 +13,38 @@
     <title>Disha.com</title>
 </head>
 <body>
+   <!---Pop up-->
+    {% block content %}
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning" style="text-align:center;">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
 
-<!-- Navigation-->
-<div class=" bg-nav text-light d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    {% block page_content %}{% endblock %}
+    {% endblock %}
+<!---Pop up-->
+<div class="bg-nav text-light d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
         <img src="static/images/logo1.jpg" class="img-fluid my-0 mr-md-auto font-weight-normal" style="width:100px; height:40px;" alt="logo">
         <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2  text-light" href="/">Home</a>
+            <a class="p-2  text-light" href="/home">Home</a>
+            <a class="p-2  text-light" href="/analysis">Analysis</a>
+            <a class="p-2  text-light" href="/profile">Profile</a>
+            <button type="button" class="btn bg transparent mb-2" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="color:white;">Salary Predictions</button>
+            <!--future prediction-->
+                <a class="p-2  text-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Future Predictions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="/MLE_future">Machine Learning Engineer</a>
+                  <a class="dropdown-item" href="/SD_future">Software Developer</a>
+                </div>
+            <!--//future prediction-->
             <a class="p-2  text-light" href="/about">About</a>
         </nav>
-         <a class="btn btn-outline-primary" href="/index">Log in</a>
+         <a class="btn btn-outline-primary" href="/logout">Log out</a>
 </div>
-<!--// Navigation-->
 
 <!--Start Slideshow-->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -34,7 +55,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="static/images/s2.png" alt="Second slide">
+      <img class="d-block w-100" src="static/images/s2.png" alt="First slide">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="static/images/s9.webp" alt="Second slide">
@@ -43,10 +64,10 @@
       <img class="d-block w-100" src="static/images/s5.jpg" alt="Third slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="static/images/s7.jpg" alt="Third slide">
+      <img class="d-block w-100" src="static/images/s7.jpg" alt="Fourth slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="static/images/s1.jpg" alt="Third slide">
+      <img class="d-block w-100" src="static/images/s1.jpg" alt="Fifth slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -117,11 +138,9 @@
                  </div>
              </div>
          </div>
-</div>
-<br><br>
-<!-- End Blogs-->
+</div><br><br>
 
-<!--footer-->
+<!-- End Blogs-->
 
 <div class="card text-center">
   <div class="card-header">
@@ -140,6 +159,57 @@
    Copyright&copy;Disha.com | <i> All rights reserved.</i>
   </div>
 </div>
+
+
+<!-- // salary analysis-->
+<div class="container">
+<!--    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Add skill</button>-->
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                        <center><h5 class="modal-title" id="exampleModalLabel">Predict Salary!!</h5></center>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form method="post"  action="/salary_prediction" >
+                                          <div class="form-group">
+                                              <label for="recipient-name" class="col-form-label"><i>Job Location Preferred:</i></label>
+                                            <input type="text" class="form-control" id="recipient-name"  name="location">
+                                          </div>
+                                          <div class="form-group">
+                                              <label class="col-form-label"><i>Job Profile:</i></label>
+                                            <input type="text" class="form-control"  name="profile">
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <input type="submit" class="btn btn-primary"  value="Check" >
+                                          </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                </div>
+
+
+        <script>
+            $('#exampleModal').on('show.bs.modal', function (event) {
+              var button = $(event.relatedTarget) // Button that triggered the modal
+              var recipient = button.data('whatever') // Extract info from data-* attributes
+              // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+              // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+              var modal = $(this)
+              modal.find('.modal-title').text('New message to ' + recipient)
+              modal.find('.modal-body input').val(recipient)
+            })
+
+        </script>
+
+<!-- salary analysis-->
 
 <!--// footer-->
 
