@@ -1,10 +1,7 @@
 # Annotators-0412
 ## Task Pending
-- [] Courses and apply button
-- [] Cloud dataset for future
-- [] Future Prediction
 - [] Back-end
-- [] Salary Prediction
+
 ## Task Done
 - [x] Scrapped Data
 - [x] Cleaned Data
@@ -12,3 +9,6 @@
 - [x] RNN Model
 - [x] Analysis Charts
 - [x] Skills extraction
+- [x] Salary Prediction
+- [x] Future Prediction
+- [x] Apply Job
