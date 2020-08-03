@@ -1,4 +1,14 @@
 # Annotators-0412
+# Features
+* Job Title Prediction
+* Skill Suggestion
+* Analysis
+* Future Trend Prediction
+* Salary Prediction
+* Recruiter Profile
+# Flow of the Project
+**Main.py** is the main file from the website will start. It is a Flask File which will be linked to each and every prediction model and HTML pages.
+
 ## Task Pending
 - [] Back-end
 
