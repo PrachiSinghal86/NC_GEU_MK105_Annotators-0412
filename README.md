@@ -20,16 +20,21 @@ From the main file we can access each and every feature. First the user will hav
   - He will also get suggestions of skills which he lack for the that job profile and the top skills for each role is taken from the job description.
   - Depending on his preferred location and title he will get expected salary.
   - He can also directed to job website to  apply for jobs based on the job title predicted.
+  -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/blob/master/Screeshots_of_website/Job_prediction.jpg "Job Title Prediction")
 - Analysis
   - Graphs of various job title are displayed.
   - Skills, Location, Salary are used to plot multiple graphs.
+  -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/blob/master/Screeshots_of_website/Analysis.jpg "Analysis")
   
 - Future Forecast
   - A synthetic data to predict future trend is made using the statistics from various websites.
   - Time Series Analysis of the data is made to get expected number of jobs in a particular profile till 2025.
+  -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/blob/master/Screeshots_of_website/Future%20Prediction.jpg "Profile")
 - Salary Prediction
   - Salary is predicted using Job Title and Location.
   - SVM is used to predict the range.
+  -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/blob/master/Screeshots_of_website/Salary_prediction.jpg "Profile")
+  
 
 ## Task Done
 - [x] Scrapped Data
