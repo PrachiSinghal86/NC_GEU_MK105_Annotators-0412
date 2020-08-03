@@ -13,14 +13,17 @@ From the main file we can access each and every feature. First the user will hav
   - After going in profile page the user will have to enter his personal,educational and skills.
   - After that there is an option to predict the job title most suitable for him.
   - Now he be directed to Job Prediction page
+  -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/master/images/profile.jpeg "Profile")
 - Job Title Prediction
   - Depending on the work experience, education and skills the title most suitable for him will be predicted.
-  - He will also get suggestions of skills which he lack for the that job profile.
+  - RNN and NLP is used to train the dataset which is extracted from Indeed and Glassdoor.
+  - He will also get suggestions of skills which he lack for the that job profile and the top skills for each role is taken from the job description.
   - Depending on his preferred location and title he will get expected salary.
   - He can also directed to job website to  apply for jobs based on the job title predicted.
 - Analysis
   - Graphs of various job title are displayed.
   - Skills, Location, Salary are used to plot multiple graphs.
+  
 - Future Forecast
   - A synthetic data to predict future trend is made using the statistics from various websites.
   - Time Series Analysis of the data is made to get expected number of jobs in a particular profile till 2025.
