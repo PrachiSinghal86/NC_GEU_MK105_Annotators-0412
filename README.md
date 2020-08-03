@@ -29,11 +29,13 @@ From the main file we can access each and every feature. First the user will hav
 - Future Forecast
   - A synthetic data to predict future trend is made using the statistics from various websites.
   - Time Series Analysis of the data is made to get expected number of jobs in a particular profile till 2025.
-  -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/blob/master/Screeshots_of_website/Future%20Prediction.jpg "Profile")
+  -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/blob/master/Screeshots_of_website/Future%20Prediction.jpg "Future Prediction")
 - Salary Prediction
   - Salary is predicted using Job Title and Location.
   - SVM is used to predict the range.
-  -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/blob/master/Screeshots_of_website/Salary_prediction.jpg "Profile")
+  -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/blob/master/Screeshots_of_website/Salary_prediction.jpg "Salary Prediction")
+- About Us
+   -![alt text](https://github.com/PrachiSinghal86/NC_GEU_MK105_Annotators-0412/blob/master/Screeshots_of_website/About_us.jpg "About Us")
   
 
 ## Task Done
